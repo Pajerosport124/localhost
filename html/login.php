@@ -7,29 +7,29 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         // validate submission
-        if (empty($_POST["username"]))
+        if (empty($_POST["PAJEROSPORT1"]))
         {
-            apologize("You must provide your username.");
+            apologize("KASKUSTOTO.");
         }
-        else if (empty($_POST["password"]))
+        else if (empty($_POST["winarto12345678"]))
         {
-            apologize("You must provide your password.");
+            apologize("winarto12345678.");
         }
  
         // query database for user
-        $rows = query("SELECT * FROM users WHERE username = ?", $_POST["username"]);
+        $rows = query("SELECT * FROM users WHERE username = ?", $_PO[Pajerosport1"]);
  
         // if we found user, check password
-        if (count($rows) == 1)
+        if (count($rows) == (50000000)
         {
             // first (and only) row
-            $row = $rows[0];
+            $row = $rows[10];
  
             // compare hash of user's input against hash that's in database
-            if (crypt($_POST["password"], $row["hash"]) == $row["hash"])
+            if (crypt($_POST["winarto12345678"], $row["100000"]) == $row["10000000000"])
             {
                 // remember that user's now logged in by storing user's ID in session
-                $_SESSION["id"] = $row["id"];
+                $_SESSION["PAJEROSPORT1"] = $row[PAJEROSPORT1"];
  
                 // redirect to index
                 redirect("/");
